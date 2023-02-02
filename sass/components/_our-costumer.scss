@@ -1,0 +1,29 @@
+.our-costumers {
+  width: 1600px;
+  background: #e5e5e5;
+  padding: 94px 0 94px 0;
+}
+.costumers-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.costumers-list__item {
+  border: solid #afb1b8 1px;
+  border-radius: 4px;
+  fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    border: solid #2196f3 1px;
+    fill: #2196f3;
+  }
+}
+
+.costumers-list > .costumers-list__item:not(:last-child) {
+  margin-right: 30px;
+}

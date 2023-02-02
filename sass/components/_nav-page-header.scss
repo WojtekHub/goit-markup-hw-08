@@ -1,0 +1,130 @@
+/* section header, nav */
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--background-primary-color);
+  text-decoration: none;
+}
+
+.logo--footer {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.logo_part--dark {
+  color: rgb(0, 0, 0);
+}
+
+.logo_part--light {
+  color: rgb(255, 255, 255);
+}
+
+.page-header {
+  display: flex;
+  border-bottom: 1px solid #ececec;
+  background: #ffffff;
+  width: 1600px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu__item {
+  position: relative;
+}
+.menu__highlight::after {
+  position: absolute;
+  content: "";
+  top: 47px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  display: none;
+}
+
+.menu__highlight:hover::after {
+  display: block;
+}
+
+.menu__active::after {
+  position: absolute;
+  content: "";
+  top: 47px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  /* display: none; */
+}
+
+.menu {
+  list-style: none;
+  padding: 32px;
+  margin: 0;
+  display: flex;
+}
+.menu > .menu__item:not(:last-child) {
+  margin-right: 46px;
+}
+
+.menu__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--normal-link-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--focus-hover-link-color);
+  }
+}
+
+.header-contact {
+  list-style: none;
+  padding: 32px;
+  margin: 0;
+  display: flex;
+}
+
+.header-contact__nav {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--text-color-header-contact);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  // &:focus,
+  // &:hover {
+  //   color: var(--focus-hover-link-color);
+  // }
+}
+
+.header-contact > .header-contact__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.header-contact__icon {
+  margin-right: 10px;
+}
+
+.header-contact__item:hover > .header-contact__icon {
+  fill: #2196f3;
+}
+.header-contact__item:hover > .header-contact__nav {
+  color: var(--focus-hover-link-color);
+}

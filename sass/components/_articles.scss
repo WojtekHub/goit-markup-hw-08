@@ -1,0 +1,49 @@
+.articles {
+  background: #e5e5e5;
+  width: 1600px;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 94px 215px;
+  }
+
+  &__list > &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__svg {
+    width: 270px;
+    /* height: 120px; */
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 25px 100px 25px 100px;
+  }
+
+  &__icon {
+    display: block;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  &__demo {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color-demo-article);
+    margin: 0;
+  }
+}

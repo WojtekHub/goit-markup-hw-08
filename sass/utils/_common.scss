@@ -1,0 +1,56 @@
+//responsive
+// $mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
+// @mixin mobile {
+//   @media screen and (max-width: #{$mobile}) {
+//     @content;
+//   }
+// }
+
+@mixin tablet {
+  @media screen and (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+body {
+  background: var(--body-background-color);
+  color: var(--main-font-color);
+  font-family: var(--main-font);
+}
+
+.container {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin: 0 auto;
+  max-width: 480px;
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }
+}
+
+.header-contact {
+  --text-color-header-contact: #757575;
+}
+.worker-profession {
+  --text-color-worker-profession: #757575;
+}
+
+.sub-description {
+  --text-color-sub-description: #757575;
+}
+
+.articles__demo {
+  --text-color-demo-article: #757575;
+}

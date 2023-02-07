@@ -109,6 +109,26 @@
           <a href="" class="logo"
             >Web<span class="logo_part--dark">Studio</span></a
           >
+          <!--Mobail Menu-->
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <!--End Mobail Menu-->
           <ul class="menu">
             <li class="menu__item">
               <div class="menu__highlight">
@@ -166,57 +186,59 @@
         </div>
       </section>
       <section>
-        <div class="articles container">
-          <ul class="articles__list">
-            <li class="articles__item">
-              <div class="articles__svg">
-                <svg class="articles__icon" width="70" height="70">
-                  <use href="./images/icons.svg#icon-antenna-1"></use>
-                </svg>
-              </div>
-              <h5 class="articles__title">LOREM IPSUM</h5>
-              <p class="articles__demo">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-            <li class="articles__item">
-              <div class="articles__svg">
-                <svg class="articles__icon" width="70" height="70">
-                  <use href="./images/icons.svg#icon-clock-1"></use>
-                </svg>
-              </div>
-              <h5 class="articles__title">LOREM IPSUM</h5>
-              <p class="articles__demo">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-            <li class="articles__item">
-              <div class="articles__svg">
-                <svg class="articles__icon" width="70" height="70">
-                  <use href="./images/icons.svg#icon-diagram-1"></use>
-                </svg>
-              </div>
-              <h5 class="articles__title">LOREM IPSUM</h5>
-              <p class="articles__demo">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-            <li class="articles__item">
-              <div class="articles__svg">
-                <svg class="articles__icon" width="70" height="70">
-                  <use href="./images/icons.svg#icon-astronaut-1"></use>
-                </svg>
-              </div>
-              <h5 class="articles__title">LOREM IPSUM</h5>
-              <p class="articles__demo">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
-            </li>
-          </ul>
+        <div class="articles">
+          <div class="container">
+            <ul class="articles__list">
+              <li class="articles__item">
+                <div class="articles__svg">
+                  <svg class="articles__icon" width="70" height="70">
+                    <use href="./images/icons.svg#icon-antenna-1"></use>
+                  </svg>
+                </div>
+                <h5 class="articles__title">LOREM IPSUM</h5>
+                <p class="articles__demo">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </li>
+              <li class="articles__item">
+                <div class="articles__svg">
+                  <svg class="articles__icon" width="70" height="70">
+                    <use href="./images/icons.svg#icon-clock-1"></use>
+                  </svg>
+                </div>
+                <h5 class="articles__title">LOREM IPSUM</h5>
+                <p class="articles__demo">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </li>
+              <li class="articles__item">
+                <div class="articles__svg">
+                  <svg class="articles__icon" width="70" height="70">
+                    <use href="./images/icons.svg#icon-diagram-1"></use>
+                  </svg>
+                </div>
+                <h5 class="articles__title">LOREM IPSUM</h5>
+                <p class="articles__demo">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </li>
+              <li class="articles__item">
+                <div class="articles__svg">
+                  <svg class="articles__icon" width="70" height="70">
+                    <use href="./images/icons.svg#icon-astronaut-1"></use>
+                  </svg>
+                </div>
+                <h5 class="articles__title">LOREM IPSUM</h5>
+                <p class="articles__demo">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section>
@@ -546,7 +568,57 @@
         </div>
       </section>
     </main>
+    <!--Mobail Manu-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
 
+      <ul class="mobile-menu">
+        <li><a href="" class="mobali-menu__link">Agencja</a></li>
+        <li><a href="" class="mobali-menu__link">Portfolio</a></li>
+        <li><a href="" class="mobali-menu__link">Kontakt</a></li>
+      </ul>
+
+      <div class="mobile-menu__address">
+        <p>
+          <a class="mobile-menu__email" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </p>
+        <p>
+          <a class="mobile-menu__tel" href="tel:+48111111111"
+            >+48 111 111 111</a
+          >
+        </p>
+      </div>
+      <div class="mobali-menu__socialLink">
+        <ul class="mobali-menu__socialLinkList">
+          <li class="mobali-menu__socialLinkItem">Instagram</li>
+          <li class="mobali-menu__socialLinkItem">Twitter</li>
+          <li class="mobali-menu__socialLinkItem">Facebook</li>
+          <li class="mobali-menu__socialLinkItem">Linkedin</li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <!--END Mobail Manu-->
     <footer>
       <div class="footer-flex container">
         <address>
@@ -626,5 +698,6 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

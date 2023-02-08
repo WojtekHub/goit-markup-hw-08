@@ -1,44 +1,36 @@
 .articles {
   background: #e5e5e5;
   margin: 0 auto;
-  width: 1600px;
-
+  width: 480px;
   &__list {
     list-style: none;
+    padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 15px;
     margin: 0;
-    padding: 94px 0;
-  }
-
-  &__list > &__item:not(:last-child) {
-    margin-right: 30px;
   }
 
   &__svg {
-    width: 270px;
-    /* height: 120px; */
     background: #f5f4fa;
     border-radius: 4px;
-    margin-bottom: 30px;
-    padding: 25px 100px 25px 100px;
-  }
 
-  &__icon {
-    display: block;
+    margin: 30px 0;
+    padding: 25px 205px 25px 205px;
   }
 
   &__title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 10px;
   }
-
   &__demo {
     font-style: normal;
     font-size: 14px;
@@ -46,5 +38,46 @@
     letter-spacing: 0.03em;
     color: var(--text-color-demo-article);
     margin: 0;
+  }
+}
+
+@include tablet {
+  .articles {
+    width: 768px;
+
+    &__list {
+    }
+    &__item {
+    }
+    &__svg {
+    }
+    &__title {
+      text-align: left;
+    }
+    &__demo {
+    }
+  }
+}
+
+@include desktop {
+  .articles {
+    width: 1200px;
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 0;
+      padding: 94px 0;
+    }
+
+    &__list > &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &__svg {
+      width: 270px;
+      padding: 25px 100px 25px 100px;
+    }
   }
 }

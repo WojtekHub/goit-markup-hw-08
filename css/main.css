@@ -675,42 +675,40 @@ body {
 .articles {
   background: #e5e5e5;
   margin: 0 auto;
-  width: 1600px;
+  width: 480px;
 }
 .articles__list {
   list-style: none;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 60px 15px;
   margin: 0;
-  padding: 94px 0;
-}
-.articles__list > .articles__item:not(:last-child) {
-  margin-right: 30px;
 }
 .articles__svg {
-  width: 270px;
-  /* height: 120px; */
   background: #f5f4fa;
   border-radius: 4px;
-  margin-bottom: 30px;
-  padding: 25px 100px 25px 100px;
-}
-.articles__icon {
-  display: block;
+  margin: 30px 0;
+  padding: 25px 205px 25px 205px;
 }
 .articles__title {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 10px;
 }
 .articles__demo {
   font-style: normal;
@@ -721,51 +719,85 @@ body {
   margin: 0;
 }
 
-.section-title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin: 0;
-  margin-bottom: 50px;
+@media screen and (min-width: 768px) {
+  .articles {
+    width: 768px;
+  }
+  .articles__title {
+    text-align: left;
+  }
 }
-
-.what-we-do {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: #e5e5e5;
-  width: 1600px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 1200px) {
+  .articles {
+    width: 1200px;
+  }
+  .articles__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    padding: 94px 0;
+  }
+  .articles__list > .articles__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .articles__svg {
+    width: 270px;
+    padding: 25px 100px 25px 100px;
+  }
 }
-.what-we-do__list {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-  margin-bottom: 94px;
-  padding-left: 0;
+@media screen and (min-width: 480px) {
+  .what-we-do {
+    display: none;
+  }
 }
-.what-we-do__list > .what-we-do__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .what-we-do {
+    display: none;
+  }
 }
-
-.signature-back {
+@media screen and (min-width: 1200px) {
+  .what-we-do {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #e5e5e5;
+    width: 1600px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .what-we-do__list {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    margin-bottom: 94px;
+    padding-left: 0;
+  }
+  .what-we-do__list > .what-we-do__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.what-we-do .signature-back {
   position: relative;
 }
-.signature-back__title {
+.what-we-do .signature-back__title {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -780,6 +812,17 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
+}
+
+.section-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 .our-team {

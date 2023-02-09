@@ -9,8 +9,8 @@
   margin-bottom: 20px;
 }
 
-.footer-flex {
-  max-width: 480px;
+.footer {
+  width: 100%;
   background: #2f303a;
   padding: 60px 0;
 }
@@ -24,13 +24,18 @@
   letter-spacing: 0.03em;
   margin: 0;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 
   & > &__item:not(:last-child) {
     margin-bottom: 60px;
   }
+
+  // & > &__item:first-child {
+  //   margin-right: 144px;
+  // }
 
   &__item {
     text-align: center;
@@ -69,18 +74,12 @@
     }
   }
 
-  &__newsletter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   &__label {
     display: none;
   }
 
   &__emailNews {
-    width: 450px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -91,15 +90,11 @@
     letter-spacing: 0.03em;
     background-color: #2f303a;
     color: rgba(255, 255, 255, 0.6);
-
-    padding: 16px 15px;
+    padding: 0 15px;
     margin-bottom: 20px;
   }
 
   &__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 200px;
     height: 50px;
     font-weight: 700;
@@ -125,57 +120,15 @@
   }
 }
 
-@include tablet {
-  .footer-flex {
-    max-width: 768px;
-  }
-
-  .footer-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    & > &__item:first-child {
-      margin-right: 144px;
-    }
-
-    &__newsletter {
-      flex-direction: column;
-    }
-  }
-}
-
 @include desktop {
-  .footer-flex {
-    max-width: 1600px;
-    padding: 60px 215px;
-  }
-
   .footer-list {
     display: flex;
-    flex-direction: row;
-    align-items: baseline;
+    flex-wrap: nowrap;
     justify-content: space-between;
-
-    & > &__item:first-child {
-      margin-right: 70px;
-    }
-
-    &__emailNews {
-      width: 358px;
-      margin-right: 12px;
-    }
+    align-items: center;
 
     &__item {
       text-align: left;
-    }
-
-    & > &__item:not(:last-child) {
-      margin-bottom: 0px;
-    }
-
-    &__newsletter {
-      flex-direction: row;
-      align-items: self-start;
     }
   }
 }

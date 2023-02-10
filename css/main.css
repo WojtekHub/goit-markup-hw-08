@@ -425,9 +425,13 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.page-header {
+.nav {
+  width: 100%;
   border-bottom: 1px solid #ececec;
   background: #ffffff;
+}
+
+.page-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1150,9 +1154,9 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .footer-list__item {
     text-align: left;

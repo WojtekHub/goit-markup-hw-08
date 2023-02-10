@@ -129,6 +129,17 @@
 
     &__item {
       text-align: left;
+      flex-grow: 1;
+    }
+
+    &__newsletter {
+      display: flex;
+      gap: 12px;
+    }
+    &__button {
+      display: flex;
+      justify-content: center;
+      min-width: 180px;
     }
   }
 }

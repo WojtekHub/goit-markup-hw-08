@@ -54,3 +54,9 @@ body {
 .articles__demo {
   --text-color-demo-article: #757575;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

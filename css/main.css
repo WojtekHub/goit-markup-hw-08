@@ -46,6 +46,12 @@ body {
   --text-color-demo-article: #757575;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -1282,12 +1288,6 @@ figure {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   padding: 20px 24px;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .results__item {

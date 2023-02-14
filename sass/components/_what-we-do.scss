@@ -1,5 +1,5 @@
 .what-we-do {
-  @include mobile {
+  @media only screen and (min-width: 200px) {
     display: none;
   }
   @include tablet {

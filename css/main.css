@@ -457,7 +457,7 @@ img {
 @media screen and (min-width: 1200px) {
   .page-header {
     max-width: 1600px;
-    padding: 16px 227px 16px 215px;
+    padding: 25px 227px 25px 215px;
   }
 }
 
@@ -499,7 +499,7 @@ img {
 @media screen and (min-width: 768px) {
   .menu {
     list-style: none;
-    padding: 17px;
+    padding: 0;
     margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -532,6 +532,7 @@ img {
 @media screen and (min-width: 768px) {
   .header-contact {
     list-style: none;
+    padding: 0;
     margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;

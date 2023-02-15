@@ -40,7 +40,7 @@
   }
   @include desktop {
     max-width: 1600px;
-    padding: 16px 227px 16px 215px;
+    padding: 25px 227px 25px 215px;
   }
 }
 
@@ -79,7 +79,7 @@
   display: none;
   @include tablet {
     list-style: none;
-    padding: 17px;
+    padding: 0;
     margin: 0;
     display: flex;
   }
@@ -110,6 +110,7 @@
   display: none;
   @include tablet {
     list-style: none;
+    padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;

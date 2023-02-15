@@ -1,25 +1,26 @@
 .slider {
   display: block;
   margin: 0 auto;
-  max-width: 480px;
+  width: 100%;
+  height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: 480px 400px;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/slider_img_480.jpg");
+
+  // background-image: linear-gradient(
+  //     rgba(47, 48, 58, 0.4),
+  //     rgba(47, 48, 58, 0.4)
+  //   ),
+  background-image: url("../images/slider_img_480.jpg");
 
   @include tablet {
-    max-width: 768px;
-    background-size: 768px 400px;
+    max-width: 100%;
+    height: 400px;
     background-image: url("../images/slider_img_768.jpg");
   }
 
   @include desktop {
-    max-width: 1600px;
-    background-size: 1600px 600px;
+    width: 100%;
+    height: 600px;
     background-image: url("../images/slider_img_1600.jpg");
   }
 
